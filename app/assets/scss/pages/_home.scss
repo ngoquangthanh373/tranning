@@ -1,0 +1,150 @@
+.home {
+	min-height: 100vh;
+	position: relative;
+	&__img {
+		z-index: 000;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	&__circles {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 2%;
+		z-index: 1;
+	}
+	&__circle {
+		width: 8px;
+		height: 8px;
+		border: 1px solid rgba(255, 255, 255, 0.4);
+		border-radius: 50%;
+		margin-bottom: 12px;
+		display: block;
+		cursor: pointer;
+	}
+	&__circle.active {
+		background-color: $color-default-lightest;
+	}
+	&__wrap-title {
+		position: absolute;
+		width: 100%;
+		bottom: 30%;
+		text-align: center;
+		white-space: nowrap;
+	}
+	&__title {
+		font-size: 6.2rem;
+		color: $color-default-lightest;
+		font-weight: 300;
+		margin-bottom: 4px;
+		span {
+			font-weight: 700;
+		}
+	}
+	&__subtitle { 
+		font-size: 4.8rem;
+		color: $color-default-lightest;
+		font-weight: 300;
+		span {
+			color: $primary-green;
+		}
+		margin-bottom: 24px;
+	}
+	&__slogan {
+		color: $color-default-lightest;
+		opacity: 0.7;
+		font-size: 1.8rem;
+		font-weight: 300;
+		position: relative;
+		display: inline-block;
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 30px;
+			height: 1px;
+			background-color: $primary-green;
+		}
+		&:before {
+			left: -23%;
+		}
+		&:after {
+			right: -23%;
+		}
+	}
+	&__socials {
+		position: absolute;
+		width: 100%;
+		bottom: 5%;
+		text-align: center;
+	}
+	&__link {
+		font-size: 1.5rem;
+		margin-right: 16px;
+		color: $color-default-lightest;
+		opacity: 0.4;
+		transition: all 0.25s;
+		&:hover {
+			color: $primary-green;
+			opacity: 1;
+		}
+	}
+	&__link:last-child {
+		margin-right: 0;
+	}
+	@media screen and (max-width: 616px) {
+		&__title {
+			font-size: 5.5rem;
+		}
+		&__subtitle { 
+			font-size: 4rem;
+		}
+	}
+	@media screen and (max-width: 516px) {
+		&__title {
+			font-size: 5rem;
+		}
+		&__subtitle { 
+			font-size: 3.5rem;
+		}
+		&__slogan {
+			font-size: 1.4rem;
+		}
+	}
+	@media screen and (max-width: 454px) {
+		&__title {
+			font-size: 4.5rem;
+		}
+		&__subtitle { 
+			font-size: 3rem;
+		}
+	}	
+	@media screen and (max-width: 384px) {
+		&__title {
+			font-size: 4rem;
+		}
+		&__subtitle { 
+			font-size: 2.5rem;
+		}
+		&__slogan {
+			font-size: 1.3rem;
+		}
+	}	
+	@media screen and (max-width: 320px) {
+		&__title {
+			font-size: 3.5rem;
+		}
+		&__subtitle { 
+			font-size: 2rem;
+		}
+		&__slogan {
+			font-size: 1.3rem;
+		}
+	}	
+}
