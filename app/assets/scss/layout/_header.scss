@@ -28,6 +28,10 @@
 		font-size: 2.8rem;
 		color: $color-default-lightest;
 		margin-right: 26px;
+		transition: color 0.25s;
+		&:hover {
+			color: #32b0ee;
+		}
 	}
 	&__text {
 		font-size: 1.4rem;
@@ -48,11 +52,11 @@
 		display: block;
 		transition: all 0.25s;
 		&:hover {
-			color: $primary-green;
+			color: #32b0ee;
 		}
 	}
 	&__link.active {
-		border-top: 1px solid $primary-green;
+		border-top: 1px solid #32b0ee;
 	}
 	&__toggle {
 		display: none;
@@ -74,7 +78,7 @@
 			list-style: none;
 			transform: translateX(100%);
 			transition: transform 0.25s linear;
-			background-color: rgba(87, 179, 240, 1);
+			background-color: $primary-green;
 		}
 		&__menu.is-show {
 			transform: translateX(0);
