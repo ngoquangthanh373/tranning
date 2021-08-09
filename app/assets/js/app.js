@@ -27,4 +27,23 @@ window.addEventListener('load', e => {
 			headerBars.classList.add('fa-bars');
 		}
 	});
+
+	// Change background-image slider page Home
+	const homeCircles = document.querySelectorAll('.home__circle');
+	const homeImg = document.querySelector('.home__img');
+	[...homeCircles].forEach(item =>
+		item.addEventListener('click', handleChangeBackgroundImg)
+	);
+	function handleChangeBackgroundImg(e) {
+		[...homeCircles].forEach(item => item.classList.remove('active'));
+		e.target.classList.add('active');
+		const dataAtb = e.target.dataset.img;
+		if (dataAtb === '1') {
+			homeImg.setAttribute('src', './assets/img/home__1.png');
+		} else if (dataAtb === '2') {
+			homeImg.setAttribute('src', './assets/img/home__2.jpg');
+		} else if (dataAtb === '3') {
+			homeImg.setAttribute('src', './assets/img/home__3.jpg');
+		}
+	}
 });
