@@ -1,97 +1,98 @@
 .header {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 79px;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    &__wrapper {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &__wrap {
-        display: flex;
-        align-items: center;
-    }
-    &__logo {
-        font-family: 'Pacifico', cursive;
-        font-size: 2.8rem;
-        color: $color-default-lightest;
-        margin-right: 26px;
-    }
-    &__text {
-        font-size: 1.4rem;
-        color: $color-default-lightest;
-        opacity: 0.3;
-        padding-left: 22px;
-        border-left: 1px solid rgba(255, 255, 255, 0.5);
-    }
-    &__menu {
-        list-style: none;
-        display: flex;
-        align-items: center;
-    }
-    &__link {
-        padding: 35px 15px 24px;
-        font-size: 1.3rem;
-        color: $color-default-lightest;
-        display: block;
-        transition: all 0.25s;
-        &:hover {
-            color: $primary-green;
-        }
-    }
-    &__link.active {
-        border-top: 1px solid $primary-green;
-    }
-    &__toggle {
-        display: none;
-        z-index: 100;
-    }
-    &__bars {
-        font-size: 2rem;
-        color: $color-default-lightest;
-    }
-    @media screen and (max-width: 540px) {
-        &__menu {
-            display: block;
-            width: 300px;
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            list-style: none;
-            transform: translateX(100%);
-            transition: transform 0.25s linear;
-            background-color: rgba(87, 179, 240, 1);
-        }
-        &__menu.is-show {
-            transform: translateX(0);
-        }
-        &__link {
-            border-bottom: 1px solid $color-default-lightest;
-        }
-        &__link.active {
-            border-top: none;
-        }
-        &__toggle {
-            display: block;
-        }
-    }
-    @media screen and (max-width: 414px) {
-        &__menu {
-            width: 100%;
-        }
-    }
-    @media screen and (max-width: 320px) {
-        &__text {
-            display: none;
-        }
-    }
+	background-color: rgba(0, 0, 0, 0.2);
+	height: 79px;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	&__wrapper {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__wrap {
+		display: flex;
+		align-items: center;
+	}
+	&__logo {
+		font-family: 'Pacifico', cursive;
+		font-size: 2.8rem;
+		color: $color-default-lightest;
+		margin-right: 26px;
+	}
+	&__text {
+		font-size: 1.4rem;
+		color: $color-default-lightest;
+		opacity: 0.3;
+		padding-left: 22px;
+		border-left: 1px solid rgba(255, 255, 255, 0.5);
+	}
+	&__menu {
+		list-style: none;
+		display: flex;
+		align-items: center;
+	}
+	&__link {
+		padding: 35px 15px 24px;
+		font-size: 1.3rem;
+		color: $color-default-lightest;
+		display: block;
+		transition: all 0.25s;
+		&:hover {
+			color: $primary-green;
+		}
+	}
+	&__link.active {
+		border-top: 1px solid $primary-green;
+	}
+	&__toggle {
+		display: none;
+		z-index: 100;
+	}
+	&__bars {
+		font-size: 2rem;
+		color: $color-default-lightest;
+	}
+	@media screen and (max-width: 616px) {
+		&__menu {
+			display: block;
+			width: 300px;
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+			list-style: none;
+			transform: translateX(100%);
+			transition: transform 0.25s linear;
+			background-color: rgba(87, 179, 240, 1);
+		}
+		&__menu.is-show {
+			transform: translateX(0);
+		}
+		&__link {
+			border-bottom: 1px solid $color-default-lightest;
+		}
+		&__link.active {
+			border-top: none;
+		}
+		&__toggle {
+			display: block;
+		}
+	}
+	@media screen and (max-width: 414px) {
+		&__menu {
+			width: 100%;
+		}
+	}
+	@media screen and (max-width: 320px) {
+		&__text {
+			display: none;
+		}
+	}
 }
