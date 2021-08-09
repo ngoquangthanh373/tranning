@@ -9,6 +9,16 @@ window.addEventListener('load', e => {
 		e.target.classList.add('active');
 	}
 
+	// Change background color on scroll
+	const header = document.querySelector('.header');
+	window.addEventListener('scroll', e => {
+		if (window.pageYOffset >= 300) {
+			header.classList.add('sticky');
+		} else {
+			header.classList.remove('sticky');
+		}
+	});
+
 	// Click toggle menu
 	const headerBars = document.querySelector('.header__bars');
 	const headerMenu = document.querySelector('.header__menu');
