@@ -78,4 +78,29 @@
     font-size: 1.3rem;
     font-weight: 400;
   }
+  @media screen and (max-width: 540px) {
+    &__text {
+      padding: 0;
+    }
+    &__filter {
+      margin-right: 0;
+    }
+    &__imgs { 
+      --columns: 2;
+    }
+  }
+  @media screen and (max-width: 414px) {
+    &__filter {
+      padding: 8px 8px;
+    }
+    &__imgs { 
+      --columns: 1;
+    }
+  }
+  @media screen and (max-width: 280px) {
+    &__wrap {
+      display: none
+    }
+  }
+  
 }
