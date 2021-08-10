@@ -1,14 +1,5 @@
 .works {
   padding-top: 100px;
-  &__text {
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-align: center;
-    padding: 0 120px;
-    line-height: 1.4;
-    margin-bottom: 50px;
-    color: #384d5c;
-  }
   &__wrap {
     display: flex;
     justify-content: center;
@@ -79,9 +70,6 @@
     font-weight: 400;
   }
   @media screen and (max-width: 540px) {
-    &__text {
-      padding: 0;
-    }
     &__filter {
       margin-right: 0;
     }
