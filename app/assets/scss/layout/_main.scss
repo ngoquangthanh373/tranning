@@ -50,6 +50,7 @@
 	border: 1px solid #c9cbcd;
 	margin-right: 16px;
 	cursor: pointer;
+	transition: all 0.25s;
 	&:hover {
 		background-color: #000;
 	}
