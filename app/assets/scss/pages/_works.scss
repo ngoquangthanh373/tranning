@@ -48,6 +48,7 @@
       width: calc(100% / var(--columns));
       position: relative;
       cursor: pointer;
+      height: 300px;
       &:hover .works__view {
         visibility: visible;
         opacity: 1;
@@ -56,6 +57,7 @@
       .works__img {
         width: 100%;
         object-fit: cover;
+        height: 100%;
       }
 
       .works__view {
