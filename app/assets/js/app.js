@@ -56,4 +56,21 @@ window.addEventListener('load', e => {
 			homeImg.setAttribute('src', './assets/img/home__3.jpg');
 		}
 	}
+
+	// Change content when click
+	const circles = document.querySelectorAll('.common__circle');
+	const featuresContents = document.querySelectorAll('.features__content');
+	[...circles].forEach(item =>
+		item.addEventListener('click', handleClickCircle)
+	);
+	function handleClickCircle(e) {
+		[...circles].forEach(item => item.classList.remove('active'));
+		[...featuresContents].forEach(item => item.classList.remove('active'));
+		e.target.classList.add('active');
+		[...featuresContents].forEach(item => {
+			if (e.target.dataset.circle === item.dataset.content) {
+				item.classList.add('active');
+			}
+		});
+	}
 });
