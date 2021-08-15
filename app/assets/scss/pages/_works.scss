@@ -13,6 +13,10 @@
       border-radius: 6px;
       cursor: pointer;
       transition: all 0.25s;
+      &.active {
+        background-color: $primary-green;
+        color: $color-default-lightest;
+      }
       @media screen and (max-width: 530px) {
         margin-bottom: 16px;
         margin-right: 40px;
