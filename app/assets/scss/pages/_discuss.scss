@@ -1,5 +1,5 @@
 .discuss {
-  padding: 100px 0 120px;
+  padding: 100px 0 107px;
 
   &__wrapper {
     --columns: 3; 
@@ -115,6 +115,7 @@
       
       .discuss__social {
         margin-bottom: 26px;
+        display: block;
         @media screen and (max-width: 767px) {
           margin-right: 30px;
           margin-bottom: 0;
