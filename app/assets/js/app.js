@@ -22,10 +22,12 @@ window.addEventListener('load', e => {
 	// Click toggle menu header
 	const headerBars = document.querySelector('.header__bars');
 	const headerMenu = document.querySelector('.header__menu');
+	const headerOver = document.querySelector('.header__override');
 	headerBars.addEventListener('click', e => {
 		headerMenu.classList.toggle('is-show');
 		e.target.classList.toggle('fa-bars');
 		e.target.classList.toggle('fa-times');
+		headerOver.classList.toggle('is-show');
 	});
 	document.addEventListener('click', e => {
 		if (
@@ -35,6 +37,7 @@ window.addEventListener('load', e => {
 			headerMenu.classList.remove('is-show');
 			headerBars.classList.remove('fa-times');
 			headerBars.classList.add('fa-bars');
+			headerOver.classList.remove('is-show');
 		}
 	});
 
