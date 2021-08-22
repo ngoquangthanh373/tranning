@@ -27,6 +27,7 @@
 				position: relative;
 				margin-bottom: 20px;
 				height: 300px;
+				overflow: hidden;
 				.team__img {
 					width: 100%;
 					object-fit: cover;
@@ -42,12 +43,12 @@
 					background-color: rgba(32, 180, 150, 0.9);
 					justify-content: center;
 					color: $color-default-lightest;
-					transition: all 0.5s;
+					transition: all 0.3s ease-in-out;
 					padding: 25px;
 					text-align: center;
 					opacity: 0;
 					visibility: hidden;
-
+					transform: translateY(100%);
 					.team__title {
 						font-size: 1.6rem;
 						font-weight: 600;
@@ -107,6 +108,7 @@
 			&:hover .team__info {
 				opacity: 1;
 				visibility: visible;
+				transform: translateY(0);
 			}
 		}
 	}
