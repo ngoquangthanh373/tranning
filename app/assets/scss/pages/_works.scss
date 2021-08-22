@@ -47,7 +47,6 @@
 			width: calc(100% / var(--columns));
 			position: relative;
 			cursor: pointer;
-			height: 300px;
 			&:hover .works__view {
 				visibility: visible;
 				opacity: 1;
@@ -75,7 +74,6 @@
 				transition: all 0.5s;
 				visibility: hidden;
 				opacity: 0;
-
 				.works__eye {
 					width: 38px;
 					margin-bottom: 29px;
